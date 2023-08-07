@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+*{font-family: 'Source Sans Pro', sans-serif;}
+
+/*CSS variables section*/
+:root {
+    background-color: rgba(0, 0, 21, 1);
+    
+}
+.text-container {
+    color: black;
+}
+h1{
+    background: linear-gradient(to right, #ff6b08, #fc00ff,
+    #00C9FF, #92FE9D);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+}
+/*Extra Large screens - Extra large desktops*/
+.header{
+    
+}
+.heeder-large-screen{
+    display: flex !important;
+    justify-content: space-evenly !important;
+    color: white;
+    font-size: 18px !important;
+}
+#navDemo{
+    background-color: #000015;
+}
+#navDemo a{
+    font-size: 13px !important;
+    color:rgb(16, 91, 220);
+}
+
+/* Style for the small light bulb */
+.lightbulb {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    /*color: #fff; /* Set the color to white */
+    margin-right: 10px; /* Adjust the spacing between the lightbulb and the menu items */
+    margin-top: 10px;
+}
+
+.lightbulb::before {
+    content: "\1F4A1"; /* Unicode symbol for lightbulb (U+1F4A1) */
+}
+/* Create the moving animation on hover */
+.lightbulb:hover {
+    /* Add the animation properties */
+    transition: transform 0.5s ease-in-out;
+    animation: moveLightbulb 1s infinite;
+}
+/* Keyframes for the animation */
+@keyframes moveLightbulb {
+    0% {
+        transform: translateY(0); /* Start position */
+    }
+    50% {
+        transform: translateY(-10px); /* Middle position - move up */
+    }
+    100% {
+        transform: translateY(0); /* End position - return to the original position */
+    }
+}
+
+.hero{
+    height: 650px;
+    background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_797,q_75,w_2000/v1/clients/newyorkstate/5232359e_e163_475c_abe3_0f20af112a8c_ae020bfc-a771-4564-87b7-479fbe55735d.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-color: #000015;
+}
+.hero-description{
+    height: 650px;
+    background-color: rgba(0, 0, 21, .2);
+    display: flex;
+}
+.hero-text{
+    width:70% !important;
+    margin: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.hero-text p{
+    color:white;
+    width: 50%;
+}
+.hero-title{
+    padding-top:390px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 80px;
+    color:orange;
+    text-align: center;
+}
+.end{
+    height: 400px;
+    background-image: url("https://assets.gocity.com/files/groot_newyork/files/styles/attraction_banner_dskt/public/attractions/Edge_Hero_2020.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left;  
+    /*display: flex;
+    flex-direction: column;*/
+}
+.empty-div {
+    /* Adjust the height of the empty div as needed */
+    height: 90%;
+}
+.image-container {
+    text-align: center;
+    width: 100%;
+  }
+
+.social{
+    width:100%;
+}
+.icons{
+    font-size: 20px;
+    letter-spacing: 5px;
+
+}
+main{
+    width:80% !important;
+    margin: auto !important;
+}
+.title{
+    color:white;
+    font-weight: 600;
+    font-size: 40px;;
+    margin:50px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+h3{
+    color:white;
+    text-align: center;
+}
+h2{
+    color:white;
+    text-align: center;
+}
+h7{
+    opacity: 0.8;
+    color: white;
+}
+h8{
+    opacity: 0.8; 
+    color: white;
+    text-align: center;
+}
+.visualization{
+    text-align: center;
+}
+.visualization-list{
+    width: 100%;
+    height: 590px;
+    margin: 20px;
+    overflow: hidden;
+    border-top: none;
+    
+      -webkit-box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
+              box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-bottom: 1px solid #6004f4;
+    color:white;
+     
+}/* blueviolet margin: 20px; width:100%;*/
+.visualization-list1{
+    height: 650px;
+    overflow: hidden;
+    border-top: none;
+      -webkit-box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
+              box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-bottom: 1px solid #6004f4;
+    color:white;
+     
+}
+h4{
+    color:white;
+    font-weight: 700;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contact-list{
+    margin-top: 15px !important;
+    color: white;
+}
+h5{
+    color:white;
+}
+span{
+    padding-right: 10px;
+}
+.contact-list p{
+}
+.email-contact{
+    width:80%;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*General CSS and CSS reset*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+
+/* ____________________________________________________________________*/
+/*MEDIA QUERIES*/
+  
+/* Media query for 4K screen or extra large displays */
+@media (min-width: 3840px) {
+    /* Adjust margins, padding, and layout for large screens */
+    body {
+      margin: 2rem; /* Example margin adjustment */
+    }
+  
+    /* Use high-resolution images for 4K displays */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .header{
+        font-size: 30px;
+    }
+    .hero{
+        height: 1500px !important;;
+        background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_797,q_75,w_2000/v1/clients/newyorkstate/5232359e_e163_475c_abe3_0f20af112a8c_ae020bfc-a771-4564-87b7-479fbe55735d.jpg");
+    }
+    .hero-description{
+        height: 2000px
+    }
+    .hero-title{
+        font-size:100px;
+    }
+    .visualization-list{
+        height: 1800px;
+        width: 100%;
+    }
+    .visualization-list1{
+        height: 1800px;
+        width: 100%;
+    }
+    .end{
+        height: 1200px;
+    }
+    /* Increase font size for large screens */
+    p{
+        font-size:40px;
+    }
+    h1{
+        font-size:60px;
+    }
+    h2{
+        font-size:52px;
+    }
+    h3{
+        font-size:44px;
+    }
+    h4{
+        font-size:40px;
+    }
+    h5{
+        font-size:36px;
+    }
+    h6{
+        font-size:26px;
+    }
+    h7{
+        font-size:22px;
+    }
+  }
+/*Large screens - Desktop*/
+@media screen and (max-width: 1500px) {
+    .hero{
+        height: 550px !important;;
+        background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_797,q_75,w_2000/v1/clients/newyorkstate/5232359e_e163_475c_abe3_0f20af112a8c_ae020bfc-a771-4564-87b7-479fbe55735d.jpg");
+    }
+    .hero-description{
+        height: 550px
+    }
+    .hero-title{
+        font-size:50px;
+    }
+}
+
+/*medium screens - Laptops*/
+@media screen and (max-width: 1024px) {
+    main{
+        width:100% !important;
+        margin: auto !important;
+    }    
+    
+}
+
+/*Small screens - tablets*/
+@media screen and (max-width: 768px) {
+    .heeder-large-screen{
+        display:block !important;
+    }
+    header a{
+        font-size: 14px;
+    }
+    .hero{
+        height: 400px !important;
+        background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_797,q_75,w_2000/v1/clients/newyorkstate/5232359e_e163_475c_abe3_0f20af112a8c_ae020bfc-a771-4564-87b7-479fbe55735d.jpg");
+    }
+    .hero-description{
+        height: 400px;
+        background-color: rgba(0, 0, 21, .7);
+        
+    
+    }
+    .hero-title{
+        font-size: 35px;;
+        
+    }
+    .hero-text p{
+        width: 80%;;
+        font-size: 13px;
+    }
+    .title{
+        text-align: center;
+        font-size: 30px;
+    }
+    .event-text{
+        width:80%;
+        color: blueviolet;
+
+    }
+    .event-text p{
+        font-size: 13px;
+    }
+    .event-title{
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+    
+
+    }
+    .event-hero{
+        width: 80% ;
+        margin: auto;
+    }
+    .event-image{
+        width:250px;
+        height: 400px;
+    }
+    .event-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .contact-list{
+        width: 300px;
+    }
+    .contact{
+        justify-content: space-around;
+    }
+    .contact-list p{
+        font-size: 14px ;
+
+    }
+    h5{
+        font-size: 17px;
+    }
+    
+}
+
+/*Extra small screens - phones*/
+@media screen and (max-width: 480px) {
+    .heeder-large-screen{
+        display:block !important;
+    }
+    .hero{
+        height: 450px !important;
+        background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_797,q_75,w_2000/v1/clients/newyorkstate/5232359e_e163_475c_abe3_0f20af112a8c_ae020bfc-a771-4564-87b7-479fbe55735d.jpg");
+    }
+    .hero-description{
+        height: 450px;
+        background-color: rgba(0, 0, 21, .7);
+    
+    }
+    .hero-title{
+        font-size: 30px;;
+        padding-top: 70px;
+    }
+    .hero-text p{
+        width: 100%;;
+        font-size: 13px;
+    }
+    .title{
+        text-align: center;
+        font-size: 25px;
+    }
+    .event-text{
+        width:100%;
+        color: blueviolet;
+
+    }
+    .event-text p{
+        font-size: 13px;
+    }
+    .event-title{
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+    
+
+    }
+    .event-hero{
+        width: 90% ;
+        margin: auto;
+    }
+    .event-image{
+        width:250px;
+        height: 400px;
+    }
+    .event-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .contact-list{
+        width: 300px;
+        padding:25px;
+        border:1px solid rgba(49, 45, 45, 0.5);
+        border-radius: 10px;
+    }
+    .contact-list p{
+        font-size: 12px ;
+
+    }
+    h5{
+        font-size: 15px;
+    }
+    .badge{
+
+    }
+    p{
+        font-size: 12px;
+    }
+    
+}
