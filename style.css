@@ -136,6 +136,9 @@ main{
     text-transform: uppercase;
     
 }
+p{
+    font-size: 18px;
+}
 h3{
     color:white;
     text-align: center;
@@ -172,16 +175,27 @@ h8{
      
 }/* blueviolet margin: 20px; width:100%;*/
 .visualization-list1{
-    height: 650px;
+    height: 750px;
+    width:100%;
     overflow: hidden;
     border-top: none;
-      -webkit-box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
-              box-shadow: 0 8px 40px 0 rgba(45, 57, 231, 0.37);
+      -webkit-box-shadow: 0 8px 40px 0 rgba(229, 229, 229, 0.37);
+              box-shadow: 0 8px 40px 0 rgba(229, 229, 229, 0.37);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    border-bottom: 1px solid #6004f4;
-    color:white;
-     
+    border-bottom: 1px solid #9f9f9f;
+    text-align: right;
+}
+.visualization-list2{
+    height: 700px;
+    width:100%;
+    overflow: hidden;
+    border-top: none;
+      -webkit-box-shadow: 0 8px 40px 0 rgba(229, 229, 229, 0.37);
+              box-shadow: 0 8px 40px 0 rgba(229, 229, 229, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-bottom: 1px solid #e5e5e5; 
 }
 h4{
     color:white;
