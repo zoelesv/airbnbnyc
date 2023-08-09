@@ -71,7 +71,7 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
-    background-color: #000015;
+   /* background-color: #000015;*/
 }
 .hero-description{
     height: 650px;
@@ -90,7 +90,7 @@ h1{
     width: 50%;
 }
 .hero-title{
-    padding-top:42%;
+    padding-top:465px;
     font-weight: 800;
     text-transform: uppercase;
     font-size: 80px;
@@ -250,9 +250,8 @@ aside {
 @media (min-width: 3840px) {
     /* Adjust margins, padding, and layout for large screens */
     body {
-      margin: 2rem; /* Example margin adjustment */
+      margin: 2rem;
     }
-  
     /* Use high-resolution images for 4K displays */
     img {
       max-width: 100%;
@@ -262,14 +261,15 @@ aside {
         font-size: 30px;
     }
     .hero{
-        height: 1500px !important;;
+        height: 1500px !important;
         background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_797,q_75,w_2000/v1/clients/newyorkstate/5232359e_e163_475c_abe3_0f20af112a8c_ae020bfc-a771-4564-87b7-479fbe55735d.jpg");
     }
     .hero-description{
-        height: 2000px
+        height: 1500px
     }
     .hero-title{
         font-size:100px;
+        padding-top: 850px;
     }
     .visualization-list{
         height: 1800px;
@@ -311,14 +311,15 @@ aside {
 /*Large screens - Desktop*/
 @media screen and (max-width: 1500px) {
     .hero{
-        height: 550px !important;;
+        height: 550px !important;
         background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_797,q_75,w_2000/v1/clients/newyorkstate/5232359e_e163_475c_abe3_0f20af112a8c_ae020bfc-a771-4564-87b7-479fbe55735d.jpg");
     }
     .hero-description{
-        height: 550px
+        height: 550px;
     }
     .hero-title{
         font-size:50px;
+        padding-top: 400px;
     }
 }
 
