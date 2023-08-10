@@ -12,7 +12,6 @@
     <style id="plotly.js-style-global"></style>
     <style id="plotly.js-style-modebar-06263a"></style>
     <title>Airbnb NYC</title>
-    <link rel="icon" type="image/png" href="HTTPS://www.Iloveny.com/includes/public/assets/images/svg/logo.svg" sizes="16x16">
 </head>
 <body>
   <header style="position: relative;">
@@ -141,23 +140,29 @@
     <div class="visualization" id="visualization1">
       <h2 style="padding-top: 5%;">Choropleth + Scatterplot: Price, Count, Rating in each Neighborhood</h2>
       <div class="visualization-list1">
-        <object data="NYC_carto.html" width="100%" height="100%">
+        <object data="assets/NYC_carto.html" width="100%" height="100%">
         </object>
       </div>
+      <p style="color: white; text-align: center;">
+        There are five neighborhood groups in NYC. Please click on the buttons in the top row to explore their locations on the Choropleth map. Click the buttons in the second row to view the property counts.
+      </p>
     </div>
     <!-- Visualization2 -->
     <div class="visualization" id="visualization2">
       <h2 style="padding-top: 5%;">Average price and rating in each Neighborhood group</h2>  
       <div class="visualization-list2">
-        <object data="All Neighbourhoods blackbg.html" width="100%" height="100%">
+        <object data="assets/All Neighbourhoods blackbg.html" width="100%" height="100%">
         </object>
       </div>
+      <p style="color: white; text-align: center;">
+        By clicking on each neighborhood group button, we can observe the distribution of average prices and ratings of each neighborhood.
+      </p>
     </div>
     <!-- Visualization3 -->
     <div class="visualization" id="visualization3">      
       <h2 style="padding-top: 5%;">Average price and rating in each Neighborhood</h2>
       <div class="visualization-list2">
-        <object data="Each Neighbourhood.html" width="100%" height="100%">
+        <object data="assets/Each Neighbourhood.html" width="100%" height="100%">
         </object>
       </div>
     </div>
@@ -189,7 +194,7 @@
       <h2 style="padding-top: 10%;">Most common words used by hosts</h2>
       <div >
         <div class="image">
-          <img src="wordcloud.png" style="width:100%; padding-top: 2%;"/>
+          <img src="assets/wordcloud.png" style="width:100%; padding-top: 2%;"/>
         </div>
       </div>
       <p style="color: white;">
@@ -203,11 +208,11 @@
     <div id="visualization5" style="padding-top: 2%;">     
       <h2 style="padding-top: 5%;">Mean Price and Review Rate by Room Type in each Neighborhood</h2>
       <div class="visualization-list">
-        <object data="barplot5.html" width="100%" height="100%">
+        <object data="assets/barplot5.html" width="100%" height="100%">
         </object>
       </div>
       <p style="color: white; text-align: center;">
-        Although Private rooms and Entire homes/Apartments dominate the number of listings on Airbnb, they generally have lower price and ratings compared to Shared rooms and Hotels.
+        Although Private rooms and Entire homes/Apartments dominate the number of listings on Airbnb (almost 98%), they generally have lower price and ratings compared to Shared rooms and Hotels. Given their prevalence, it can be inferred that a significant portion of Airbnb's revenue is generated from commissions on these signature room types.
       </p>
       <h4 style="padding-top: 5%;">Conclusion</h4>
       <p style="color: white;">There is not much of a correlation between price and customer satisfaction; it really depends on their budget and past experience. However, there are a lot of potential for private rooms and entire homes/apartments to be improved.</p>
