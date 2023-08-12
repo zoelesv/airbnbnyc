@@ -16,9 +16,6 @@ h1{
             -webkit-background-clip: text;
 }
 /*Extra Large screens - Extra large desktops*/
-.header{
-    
-}
 .heeder-large-screen{
     display: flex !important;
     justify-content: space-evenly !important;
@@ -105,6 +102,16 @@ h1{
     background-position:left;  
     /*display: flex;
     flex-direction: column;*/
+}
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+  
+.photo-gallery img {
+    width: 100%;
+    height: auto;
 }
 .empty-div {
     /* Adjust the height of the empty div as needed */
@@ -215,8 +222,6 @@ h5{
 }
 span{
     padding-right: 10px;
-}
-.contact-list p{
 }
 .email-contact{
     width:80%;
@@ -472,9 +477,6 @@ aside {
     }
     h5{
         font-size: 15px;
-    }
-    .badge{
-
     }
     p{
         font-size: 12px;
