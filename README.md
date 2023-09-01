@@ -11,50 +11,49 @@
 ## About
 Airbnb, Inc. is an American company that operates an online marketplace for lodging, with a primary focus on homestays for vacation rentals and tourism activities. Headquartered in San Francisco, California, the platform is accessible through both a website and a mobile app. Our project delves into the large dataset provided by the company to extract important references that significantly impact business metrics.
 
-## Exploratory Data Analysis Process
+## Project Description
 In this project we use Python to explore data and statistical measures to communicate data concepts.
 
-### Dataset
-Get the dataset from Kaggle. There are total:
-- 102599 listings
-- 5 neighborhood groups: Manhattan, Brooklyn, Queens, Bronx, Staten Island.
-- 4 room types: Private room, Entire home/Apartments, Shared room, Hotel room.
+### Data Exploratory
+- Get the dataset from Kaggle. 
+- Examine the data information. 
+- There are total:
+	- 102599 listings
+	- 5 neighborhood groups: Manhattan, Brooklyn, Queens, Bronx, Staten Island.
+	- 4 room types: Private room, Entire home/Apartments, Shared room, Hotel room.
+- Perform basic data cleaning, such as handling missing values and data type conversions.
 
-### Data Cleaning
-Perform basic data cleaning, such as handling missing values and data type conversions.
-
+Afterwards, we create the following plots using Plotly and Matplotlib.
 ### Choropleth Map
-![word cloud](/assets/choropleth.png)
+![choropleth](/assets/choropleth.png)
 Visualize the distribution of Airbnb listings across a geographic area using a choropleth map.
 
 ### Scatter Plot
-![word cloud](/assets/scatterplot.png)
+![scatterplot](/assets/scatterplot.png)
 Visualize the distribution of Airbnb price and rating in each neighborhood.
 
 ### Word Cloud
 ![word cloud](/assets/wordcloud.png)
 Generate a word cloud from the names of listings.
 
-### Stacked Bar Graph, Line Graph and Pie Chart
-![word cloud](/assets/bargraph.png)
-Create a bar graph to visualize the average price of room types (private room, entire home, shared room, hotel) in each neighborhood group.
+### Stacked Bar Graph and Pie Chart
+![stackedbargraph](/assets/bargraph.png)
+Create a bar graph to visualize the average price of room types (private room, entire home, shared room, hotel) in each neighborhood group. Implement Gestalt Principles: Law of Focal Point + Connectedness + Similarity to highlight insights.
 
-### Results and Insights
-This exploratory data analysis shows that there is not much of a correlation between price and customer satisfaction; it really depends on their budget and past experience. However, there are a lot of potential for private rooms and entire homes/apartments to be improved. Although Private rooms and Entire homes/Apartments dominate the number of listings on Airbnb (almost 98%), they generally have lower price and ratings compared to Shared rooms and Hotels. Given their prevalence, it can also be inferred that a significant portion of Airbnb's revenue is generated from commissions on these signature room types.
+- Although Private rooms and Entire homes/Apartments dominate the number of listings on Airbnb (almost 98%), they generally have lower price and ratings compared to Shared rooms and Hotels. Given their prevalence, it can be inferred that a significant portion of Airbnb's revenue is generated from commissions on these signature room types.
 
-### Visualization and presentation
+### Outcomes
+This exploratory data analysis shows that there is not much of a correlation between price and customer satisfaction; it really depends on customers' budget and past experience. However, there are a lot of potential for private rooms and entire homes/apartments to be improved. 
+
+The visualization demonstrates a strong contrast and captures the interest of the audience.
 Please visit our [website](https://zoelesv.github.io/airbnbnyc/) for an interactive and responsive experience!
 | ![Image 1](/assets/IMG_4072.png) | ![Image 2](/assets/IMG_4074.png) | ![Image 3](/assets/IMG_4082.png) | ![Image 4](/assets/IMG_4085.png) |
 |:---------------------:|:---------------------:|:---------------------:|:---------------------:|
 
 ## Files and Directories
-- assets - a directory contains all images and graph visualizations.
-	- All Neighbourhoods blackbg.html
-	- ...
-- EDA_bar_graph.ipynb
-- EDA_choropleth_Arios.ipynb
-- EDA_scatter_plot.ipynb
-- README.md
+- assets - a directory contains all images and visualization files.
+- notebooks - a directory contains all Jupiter Notebook files.
+- README.md - project description
 - index.html - main template for homepage when users go to the website.
 - script.js
 - style.css
@@ -62,9 +61,11 @@ Please visit our [website](https://zoelesv.github.io/airbnbnyc/) for an interact
 
 ## Installation
 - Fork this repository.
-- Update assets and EDA files.
+- Update assets and notebooks.
 - Update index.html and white.html with your own assets.
+- Deploy with Github Pages or using your own domains.
 
 ## Authors
 - Visualization: Arios Tong, John Bailey, Zoe Le
-- Website: Zoe Le [Git Repository](https://github.com/zoelesv/airbnbnyc)
+- Website: Zoe Le 
+- [Git Repository](https://github.com/zoelesv/airbnbnyc)
